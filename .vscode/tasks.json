@@ -2,22 +2,34 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "make build directory",
+            "type": "shell",
+            "command": "mkdir",
+            "args": [
+                "-p",
+                "C:/Users/edwin/gitProjects/C-CircularBuffer/build"
+            ],
+            "problemMatcher": []
+        },
+        {
             "label": "build C project",
             "type": "shell",
             "command": "C:/msys64/mingw64/bin/gcc.exe",
             "args": [
                 "-g",
-                "C:/Users/edwin/gitProjects/C-ProjectTemplate/src/main.c",
+                "C:/Users/edwin/gitProjects/C-CircularBuffer/src/main.c",
                 //"${workspaceFolder}/src/main.c",
                 "-o",
-                "C:/Users/edwin/gitProjects/C-ProjectTemplate/build/main.exe"
+                "C:/Users/edwin/gitProjects/C-CircularBuffer/build/main.exe"
                 //"${workspaceFolder}/build/main.exe"
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": ["$gcc"]
+            "problemMatcher": ["$gcc"],
+            "dependsOn": ["make build directory"]
         }
+
     ]
 }
