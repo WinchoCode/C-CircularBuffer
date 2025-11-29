@@ -1,0 +1,49 @@
+# This .gitignore file is intended to exclude common files and directories
+# that should not be tracked by Git in a typical development environment.
+# Consider it is a template file that may be necessary to customize based on
+# the specific needs of your project.
+
+# Build and output folders
+dist/
+# I am including build/ since the project is intended to be a template
+#build/
+
+# Dependency directories
+node_modules/
+venv/
+.env/
+
+# Compiled files
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+# I am including .vscode/ since the project is intended to be a template
+#.vscode/
+.idea/
+*.iml
+
+# Python
+__pycache__/
+*.pyc
+
+# C/C++/Embedded
+*.elf
+*.bin
+*.hex
+*.map
+
+# Backup files
+*.swp
+*.bak
