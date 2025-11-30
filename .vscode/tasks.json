@@ -18,10 +18,11 @@
             "args": [
                 "-g",
                 "C:/Users/edwin/gitProjects/C-CircularBuffer/src/main.c",
-                //"${workspaceFolder}/src/main.c",
+                "C:/Users/edwin/gitProjects/C-CircularBuffer/src/**/*.c",
+                "-I",
+                "C:/Users/edwin/gitProjects/C-CircularBuffer/src/circular_buffer/",
                 "-o",
                 "C:/Users/edwin/gitProjects/C-CircularBuffer/build/main.exe"
-                //"${workspaceFolder}/build/main.exe"
             ],
             "group": {
                 "kind": "build",
